@@ -1,9 +1,9 @@
-package uk.co.ciaranmoran.aoc;
+package uk.co.ciaranmoran.aoc.challenges;
 
 import java.util.ArrayList;
 
 public class Main {
-	static final int currentDay = 2;
+	static final int currentDay = 1;
 
 	public static void main(String[] args) {
 		
@@ -23,6 +23,10 @@ public class Main {
 			final long timeB = System.nanoTime() - startTimeB;
 			System.out.println(day + "B: " + resultB + " (" + timeB / 1000 + "ms)");
 		}
+	}
+	
+	public static void runSingleDay(Challenge day) {
+		runSingleDay(day, true, true);
 	}
 
 	public static void runAllDays(ArrayList<Challenge> days) {

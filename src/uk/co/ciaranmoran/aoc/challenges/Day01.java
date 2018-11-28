@@ -1,4 +1,4 @@
-package uk.co.ciaranmoran.aoc;
+package uk.co.ciaranmoran.aoc.challenges;
 
 public class Day01 extends Challenge{
 	

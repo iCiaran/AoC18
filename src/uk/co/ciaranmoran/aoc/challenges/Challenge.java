@@ -1,4 +1,4 @@
-package uk.co.ciaranmoran.aoc;
+package uk.co.ciaranmoran.aoc.challenges;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
