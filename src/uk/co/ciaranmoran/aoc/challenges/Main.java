@@ -18,13 +18,13 @@ public class Main {
 			final long startTimeA = System.nanoTime();
 			resultA = day.partA();
 			final long timeA = System.nanoTime() - startTimeA;
-			System.out.println(day + "A: " + resultA + " (" + timeA / 1000 + "ms)");
+			System.out.println(day + "A: " + resultA + String.format(" (%.2fms)", timeA / 1000000.0));
 		}
 		if (B) {
 			final long startTimeB = System.nanoTime();
 			resultB = day.partB();
 			final long timeB = System.nanoTime() - startTimeB;
-			System.out.println(day + "B: " + resultB + " (" + timeB / 1000 + "ms)\n");
+			System.out.println(day + "B: " + resultB + String.format(" (%.2fms)", timeB / 1000000.0));
 		}
 	}
 	
