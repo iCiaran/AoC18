@@ -6,9 +6,10 @@ public class Main {
 	static final int currentDay = 1;
 
 	public static void main(String[] args) {
-		runSingleDay(new Day01(), true, false);
-		//runSingleDay(new Day01(), false, true);
-		//runSingleDay(new Day01(), true, true );
+//		runSingleDay(new Day01(), true, false);
+//		runSingleDay(new Day01(), false, true);
+//		runSingleDay(new Day01(), true, true );
+		runAllDays(getAllDays());
 	}
 
 	public static void runSingleDay(Challenge day, boolean A, boolean B) {
