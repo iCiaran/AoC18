@@ -6,7 +6,9 @@ public class Main {
 	static final int currentDay = 1;
 
 	public static void main(String[] args) {
-		
+		runSingleDay(new Day01(), true, false);
+		//runSingleDay(new Day01(), false, true);
+		//runSingleDay(new Day01(), true, true );
 	}
 
 	public static void runSingleDay(Challenge day, boolean A, boolean B) {
@@ -21,7 +23,7 @@ public class Main {
 			final long startTimeB = System.nanoTime();
 			resultB = day.partB();
 			final long timeB = System.nanoTime() - startTimeB;
-			System.out.println(day + "B: " + resultB + " (" + timeB / 1000 + "ms)");
+			System.out.println(day + "B: " + resultB + " (" + timeB / 1000 + "ms)\n");
 		}
 	}
 	
@@ -39,7 +41,7 @@ public class Main {
 		ArrayList<Challenge> days = new ArrayList<Challenge>(currentDay);
 		for (int i = 1; i <= currentDay; ++i) {
 			try {
-				days.add((Challenge) Class.forName(String.format("uk.co.ciaranmoran.aoc.Day%02d", i)).newInstance());
+				days.add((Challenge) Class.forName(String.format("uk.co.ciaranmoran.aoc.challenges.Day%02d", i)).newInstance());
 			} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
 				e.printStackTrace();
 			}
