@@ -2,13 +2,13 @@ package uk.co.ciaranmoran.aoc.challenges;
 
 import java.util.HashSet;
 
+import java.util.Set;
+
 /*
  * https://adventofcode.com/2018/day/1
  * Part A - https://www.youtube.com/watch?v=lNkiQ9CJb7Y
  * Part B - https://www.youtube.com/watch?v=10ryQjLAqhM
  */
-import java.util.Set;
-
 public class Day01 extends Challenge{
 	
 	public Day01() {
