@@ -17,15 +17,10 @@ public class Day04 extends Challenge{
 	}
 	
 	void parseInput() {
-		Collections.sort(input, new Comparator<String>() {
-			public int compare(String a, String b) {
-				return a.substring(1, 17).compareTo(b.substring(1, 17));
-			}
-		});
-		
+		Collections.sort(input, Comparator.comparing((String s) -> s.substring(1,17)));
 		int currentGuard = 0;
 		int startSleep = 0;
-		int endSleep = 0;
+		int endSleep;
 		
 		for(String s : input) {
 			switch(s.charAt(19)) {
@@ -78,7 +73,7 @@ public class Day04 extends Challenge{
 	
 	void addToTime(int currentGuard, int startSleep, int endSleep, Map<Integer, Map<Integer, Integer>> times) {
 		if (!times.containsKey(currentGuard)) {
-			times.put(currentGuard, new HashMap<Integer, Integer>());
+			times.put(currentGuard, new HashMap<>());
 		}
 		for(int i = startSleep; i < endSleep; i++) {
 			if(times.get(currentGuard).containsKey(i)) {
@@ -88,7 +83,7 @@ public class Day04 extends Challenge{
 			}
 			
 			if(!minutes.containsKey(i)) {
-				minutes.put(i, new HashMap<Integer, Integer>());
+				minutes.put(i, new HashMap<>());
 			}
 			if(minutes.get(i).containsKey(currentGuard)) {
 				minutes.get(i).put(currentGuard, minutes.get(i).get(currentGuard) + 1);

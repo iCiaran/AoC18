@@ -3,13 +3,13 @@ package uk.co.ciaranmoran.aoc.challenges;
 import java.util.ArrayList;
 
 public class Main {
-	static final int currentDay = 2;
+	static final int currentDay = 4;
 
 	public static void main(String[] args) {
 //		runSingleDay(new Day02(), true, false);
 //		runSingleDay(new Day02(), false, true);
-//		runSingleDay(new Day02(), true, true );
-		runAllDays(getAllDays());
+		runSingleDay(new Day05(), true, true);
+//		runAllDays(getAllDays());
 	}
 
 	public static void runSingleDay(Challenge day, boolean A, boolean B) {
