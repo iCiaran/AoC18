@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 //		runSingleDay(new Day02(), true, false);
 //		runSingleDay(new Day02(), false, true);
-		runSingleDay(new Day06(), true, true);
+		runSingleDay(new Day07(), true, true);
 //		runAllDays(getAllDays());
 	}
 
